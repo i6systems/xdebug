@@ -142,7 +142,7 @@ char* xdebug_strrstr(const char* haystack, const char* needle)
 double xdebug_get_utime(void)
 {
 #ifdef HAVE_GETTIMEOFDAY
-	struct timeval tp;
+/*	struct timeval tp;
 	long sec = 0L;
 	double msec = 0.0;
 
@@ -155,6 +155,7 @@ double xdebug_get_utime(void)
 		}
 		return msec + sec;
 	}
+*/
 #endif
 	return 0;
 }
